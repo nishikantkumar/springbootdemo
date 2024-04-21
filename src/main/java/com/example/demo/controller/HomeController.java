@@ -14,9 +14,9 @@ public class HomeController {
     @Autowired
     private AppInfoService appInfoService;
 
-    @GetMapping("/")
+    /*@GetMapping("/")
     public String getHome(Model model) {
         model.addAttribute("appInfo", appInfoService.getAppInfo());
         return "home";   // refers to classpath resource /templates/home.html
-    }
+    }*/
 }
