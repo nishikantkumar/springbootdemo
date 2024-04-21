@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
 
-import com.example.demo.model.Person;
+import com.example.demo.entity.Person;
 import com.example.demo.repo.PersonRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,7 +19,7 @@ public class PersonViewController {
 
     @GetMapping("/")
     public String viewHomePage(Model model) {
-        model.addAttribute("allpersonlist", personRepo.findAll());
+        model.addAttribute("li", personRepo.findAll());
         return "index";
     }
 

@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.model.Person;
+import com.example.demo.entity.Person;
 import com.example.demo.repo.PersonRepo;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
@@ -9,14 +9,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 
 @RestController
 @RequestMapping("/api")
-public class PersonController {
+public class PersonRestController {
 
 
 
