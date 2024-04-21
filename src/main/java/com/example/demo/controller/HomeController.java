@@ -12,7 +12,7 @@ public class HomeController {
 
 
     @Autowired
-    private AppInfoService appInfoService;
+    private AppInfoService  appInfoService;
 
     @GetMapping("/appdetails")
     public String getHome(Model model) {

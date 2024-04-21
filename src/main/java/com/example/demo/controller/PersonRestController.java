@@ -17,8 +17,6 @@ import java.util.Optional;
 @RequestMapping("/api")
 public class PersonRestController {
 
-
-
        @Autowired
        PersonRepo personRepo;
 
@@ -86,6 +84,5 @@ public class PersonRestController {
                 return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
             }
         }
-
 
     }
